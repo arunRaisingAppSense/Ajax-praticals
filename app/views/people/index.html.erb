@@ -1,0 +1,33 @@
+<h1>Listing people</h1>
+<%= render 'form', modal: true %>
+
+<table>
+  <thead>
+    <tr>
+      <th>First name</th>
+      <th>Last name</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody class='table' id='people_table'>
+
+    <%# @people.each do |person| %>
+      <%# Render table row partial for each person object %>
+      <%= byebug %>
+      <%= render partial: 'table_row', locals: {people: @people} %>
+    <%# end %>
+    
+  </tbody>
+</table>
+
+<br>
+
+
+
+
+
+
+
